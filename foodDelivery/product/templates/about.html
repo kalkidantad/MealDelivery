@@ -1,0 +1,408 @@
+{% load static %} 
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    
+    <link rel="stylesheet" href="{% static 'style.css' %}" />
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="{% static 'style.css' %}">
+    <title>MealDelivery-About</title>
+  </head>
+  <body>
+    <!-- navigatin bar -->
+
+    <header class="bg-header">
+      <nav class="navbar navbar-expand-lg">
+        <div class="container">
+          <a class="navbar-brand text-white fw-bold" href="#" data-bs-toggle="tooltip" data-bs-title="MealDelivery" data-bs-placement="bottom">MealDelivery</a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+              <li class="nav-item px-2">
+                <a class="nav-link" aria-current="page" href="{% url 'home' %}">Home</a>
+              </li>
+              <li class="nav-item px-2 text-light">
+                <!-- <a class="nav-link" href="about.html">About Us</a> -->
+                <a class="nav-link" href="{% url 'about' %}">About</a>
+              </li>
+              <li class="nav-item px-2 text-light">
+                <!-- <a class="nav-link" href="features.html">Features</a> -->
+                <a class="nav-link" href="{% url 'product' %}">Product</a>
+              </li>
+              <li class="nav-item px-3 text-light">
+                <!-- <a class="nav-link cta" href="contact_us.html">Contact</a> -->
+                <a class="nav-link" href="{% url 'contact_us' %}">Contact Us</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+
+      <section class="hero-section py-5 " >
+        <div class="container py-3">
+          <div class="row g-5">
+            <div class="d-flex align-items-center justify-content-between">
+              <div class="col-12 col-lg-6">
+                <h1 class="text-white fw-bold pt-5">
+                    Enjoy the Flavorful Journey with MealDelivery
+                </h1>
+                <p class="text-white pt-4">
+                    MealDelivery is your go-to platform for seamless food delivery. 
+                <br>
+                     Whether you’re craving a hearty meal, a quick snack, or a delightful dessert, we’ve got you covered. Explore a diverse menu and have your cravings delivered right to your doorstep. Bon appétit! 🍔🍕🍣
+                </br>
+                </p>
+                <button class="btn mt-5">Get the App</button>
+              </div>
+              <div class="col-12 col-lg-6">
+                <div class="d-flex justify-content-end">
+                  <!-- <img src="assets/del.png" class="hero-img" alt="" /> -->
+                  <img src="{% static 'assets/del.png' %}" class="hero-img" alt="Logo">
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </header>
+    <main>
+      
+
+      <section class="how-it-works" id="how">
+        <div class="container">
+          <h2 class="text-dark fw-bold text-center pt-5 pb-3">
+            How MealDelivery Works
+          </h2>
+
+          <div class="container py-5">
+            <div class="row g-5">
+              <div class="col-12 col-lg-6">
+                <div
+                  class="p-4 d-flex shadow-sm section-how-card flex-column justify-content-center rounded"
+                >
+                  <span><ion-icon class="icon" name="search"></ion-icon></span>
+                  <h3 class="fw-bold text-dark how-it-works-title">
+                    Browse our extensive menu
+                  </h3>
+                  <p class="how-it-works-text">
+                    Discover a wide range of delectable dishes from various
+                    cuisines. From appetizers and main courses to desserts and
+                    beverages, we have something to satisfy every craving.
+                  </p>
+                </div>
+              </div>
+              <div class="col-12 col-lg-6">
+                <div
+                  class="d-flex p-4 shadow-sm section-how-card flex-column justify-content-center rounded"
+                >
+                  <span><ion-icon class="icon" name="search"></ion-icon></span>
+                  <h3 class="fw-bold text-dark how-it-works-title">
+                    Place your order
+                  </h3>
+                  <p class="how-it-works-text">
+                    Discover a wide range of delectable dishes from various
+                    cuisines. From appetizers and main courses to desserts and
+                    beverages, we have something to satisfy every craving.
+                  </p>
+                </div>
+              </div>
+              <div class="col-12 col-lg-6">
+                <div
+                  class="d-flex p-4 shadow-sm section-how-card flex-column justify-content-center rounded"
+                >
+                  <span><ion-icon class="icon" name="search"></ion-icon></span>
+                  <h3 class="fw-bold text-dark how-it-works-title">
+                    Track your delivery
+                  </h3>
+                  <p class="how-it-works-text">
+                    Sit back and relax as our dedicated delivery professionals
+                    swiftly bring your order to your location. Monitor the
+                    progress of your delivery in real-time and know exactly when
+                    to expect your food.
+                  </p>
+                </div>
+              </div>
+              <div class="col-12 col-lg-6">
+                <div
+                  class="d-flex p-4 shadow-sm section-how-card flex-column justify-content-center rounded"
+                >
+                  <span><ion-icon class="icon" name="search"></ion-icon></span>
+                  <h3 class="fw-bold text-dark how-it-works-title">
+                    Enjoy your meal
+                  </h3>
+                  <p class="how-it-works-text">
+                    Once your order arrives, indulge in a flavorful dining
+                    experience from the comfort of your own home. Our commitment
+                    to quality ensures that every bite is a delight.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="testimonials">
+        <div class="container">
+          <div id="carouselExample" class="carousel slide">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <div class="container py-5">
+                  <div class="row">
+                    <div class="col-12">
+                      <div
+                        class="d-flex flex-column align-items-center justify-content-center text-center"
+                      >
+                        <div class="testimonial-card">
+                          <!-- <img
+                            src="assets/f.png"
+                            width="150px"
+                            class="rounded-circle pb-4"
+                            alt=""
+                          /> -->
+                          <img src="{% static 'assets/f.png' %}" class="rounded-circle pb-4" alt="Logo">
+                          <p class="testimonial-text pb-2">
+                            MealDelivery has transformed the way I enjoy meals.
+                            The convenience of ordering my favorite dishes from
+                            local restaurants and having them delivered to my
+                            doorstep is simply fantastic.
+                          </p>
+                          <h3 class="testimonials-name">Sarah M</h3>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div class="container py-5">
+                  <div class="row">
+                    <div class="col-12">
+                      <div
+                        class="d-flex flex-column align-items-center justify-content-center text-center"
+                      >
+                        <div class="testimonial-card">
+                          <!-- <img
+                            src="assets/m.jpg"
+                            width="150px"
+                            class="rounded-circle pb-4"
+                            alt=""
+                          /> -->
+                          <img src="{% static 'assets/m.jpg' %}" width="150px" class="rounded-circle pb-4" alt="Logo">
+                          <p class="testimonial-text pb-2">
+                            MealDelivery has transformed the way I enjoy meals.
+                            The convenience of ordering my favorite dishes from
+                            local restaurants and having them delivered to my
+                            doorstep is simply fantastic.
+                          </p>
+                          <h3 class="testimonials-name">John j</h3>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <button
+              class="carousel-control-prev"
+              type="button"
+              data-bs-target="#carouselExample"
+              data-bs-slide="prev"
+            >
+              <span
+                class="carousel-control-prev-icon"
+                aria-hidden="true"
+              ></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button
+              class="carousel-control-next"
+              type="button"
+              data-bs-target="#carouselExample"
+              data-bs-slide="next"
+            >
+              <span
+                class="carousel-control-next-icon"
+                aria-hidden="true"
+              ></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+        </div>
+      </section>
+    </main>
+
+     <!-- Footer -->
+     <footer
+     class="text-center text-lg-start text-white mt-0"
+     style="background-color: #111"
+     id="contact"
+     >
+<!-- Section: Social media -->
+<section
+        class="d-flex justify-content-between p-4"
+        style="background-color: #00b9bf"
+        >
+ <!-- Left -->
+ <div class="me-5 ">
+   <span class="fw-bold"> Get connected with us: </span>
+ </div>
+ <!-- Left -->
+
+ <!-- Right -->
+ <div>
+   <a href="" class="text-white me-4">
+     <i class="fab fa-facebook-f"></i>
+   </a>
+   <a href="" class="text-white me-4">
+     <i class="fab fa-twitter"></i>
+   </a>
+   <a href="" class="text-white me-4">
+     <i class="fab fa-telegram"></i>
+   </a>
+   
+   <a href="" class="text-white me-4">
+     <i class="fab fa-instagram"></i>
+   </a>
+   <a href="" class="text-white me-4">
+     <i class="fab fa-linkedin"></i>
+   </a>
+   
+ </div>
+ <!-- Right -->
+</section>
+<!-- Section: Social media -->
+
+<!-- Section: Links  -->
+<section class="">
+ <div class="container text-center text-md-start mt-5">
+   <!-- Grid row -->
+   <div class="row mt-3">
+     <!-- Grid column -->
+     <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+       <!-- Content -->
+       <h6 class="text-uppercase fw-bold">MealDelivery</h6>
+       <hr
+           class="mb-4 mt-0 d-inline-block mx-auto"
+           style="width: 60px; background-color: #00b9bf; height: 2px"
+           />
+       <p>
+         Download the app from App Store or Play Store.
+       </p>
+       <div>
+         <iframe src="//www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d252192.24803974925!2d38.719576041427835!3d9.017714612668206!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x164b85f0f9a06d85%3A0x4331551f2e0d81cb!2zQUNUIEFtZXJpY2FuIENvbGxlZ2Ugb2YgVGVjaG5vbG9neSB8IDQgS2lsbyB8IOGKoOGKreGJtSDhiqDhiJzhiKrhiqvhipUg4Ym04Yqt4YqW4YiO4YyCIOGKruGIjOGMhSB8IDQg4Yqq4YiO!5e0!3m2!1sen!2set!4v1701249712376!5m2!1sen!2set" width="280" height="150" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" class="rounded"></iframe>
+       </div>
+     </div>
+     <!-- Grid column -->
+
+     <!-- Grid column -->
+     <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+       <!-- Links -->
+       <h6 class="text-uppercase fw-bold">Security</h6>
+       <hr
+           class="mb-4 mt-0 d-inline-block mx-auto"
+           style="width: 60px; background-color: #00b9bf; height: 2px"
+           />
+       <p>
+         <a href="#!" class="text-white">Privacy Policy</a>
+       </p>
+       <p>
+         <a href="#!" class="text-white"> Terms and Conditions</a>
+       </p>
+       <p>
+         <a href="#!" class="text-white">Copyright</a>
+       </p>
+       
+     </div>
+     <!-- Grid column -->
+
+     <!-- Grid column -->
+     <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+       <!-- Links -->
+       <h6 class="text-uppercase fw-bold">Useful links</h6>
+       <hr
+           class="mb-4 mt-0 d-inline-block mx-auto"
+           style="width: 60px; background-color: #00b9bf; height: 2px"
+           />
+       <p>
+         <a href="#!" class="text-white">Your Account</a>
+       </p>
+       <p>
+         <a href="#!" class="text-white">FAQ</a>
+       </p>
+       <p>
+         <a href="#!" class="text-white"> Rates</a>
+       </p>
+       <p>
+         <a href="#!" class="text-white">Help</a>
+       </p>
+     </div>
+     <!-- Grid column -->
+
+     <!-- Grid column -->
+     <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+       <!-- Links -->
+       <h6 class="text-uppercase fw-bold">Contact</h6>
+       <hr
+           class="mb-4 mt-0 d-inline-block mx-auto"
+           style="width: 60px; background-color: #00b9bf; height: 2px"
+           />
+       <p><i class="fas fa-home mr-3"></i>Addis Ababa, Ethiopia</p>
+       <p><i class="fas fa-envelope mr-3"></i>MealDelivery@gmail.com</p>
+       <p><i class="fas fa-phone mr-3"></i>8000 </p>
+     </div>
+     <!-- Grid column -->
+   </div>
+   <!-- Grid row -->
+ </div>
+</section>
+<div
+    class="text-center p-3"
+    style="background-color: rgba(0, 0, 0, 0.2)"
+    >
+ © 2024 Copyright:
+ <a class="text-white" href="https://mdbootstrap.com/"
+    > MealDelivery.com </a>
+    <p> All rights reserved </p>
+</div>
+
+</footer>
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+      integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"
+      integrity="sha384-fbbOQedDUMZZ5KreZpsbe1LCZPVmfTnH7ois6mU1QK+m14rQ1l2bGBq41eYeM/fS"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
+    <script>
+      const tooltipTriggerList = document.querySelectorAll(
+        '[data-bs-toggle="tooltip"]'
+      );
+      const tooltipList = [...tooltipTriggerList].map(
+        (tooltipTriggerEl) => new bootstrap.Tooltip(tooltipTriggerEl)
+      );
+    </script>
+  </body>
+</html>
