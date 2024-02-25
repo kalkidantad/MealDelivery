@@ -87,67 +87,11 @@
       <section class="featured py-5" id="features">
         <div class="container">
           <h2 class="text-dark fw-bold text-center pt-5 pb-5">
-            Featured Food Items
+            {{info.name}}
           </h2>
         </div>
 
-        <div class="container">
-          <div class="row g-5">
-            <div class="col-12 col-lg-3">
-              <div class="card shadow-sm border-0 h-100 rounded">
-                <!-- <img src="assets/burger.jpg" class="card-img-top" alt="" /> -->
-                <img src="{% static 'assets/burger.jpg' %}" class="card-img-top" alt="Logo">
-                <div class="card-body">
-                  <h3 class="card-title">Sizzling Steakhouse Burger</h3>
-                  <p class="card-text">
-                    Crowned with melted cheddar cheese, caramelized onions, crispy bacon, and a generous drizzle of tangy barbecue sauce.
-                  </p>
-                  <button class="btn mt-auto">Order Now</button>
-                </div>
-              </div>
-            </div>
-            <div class="col-12 col-lg-3">
-              <div class="card shadow-sm border-0 rounded">
-                <!-- <img src="assets/pizza.jpg" class="card-img-top" alt="" /> -->
-                <img src="{% static 'assets/pizza.jpg' %}" class="card-img-top" alt="Logo">
-                <div class="card-body">
-                  <h3 class="card-title">Mouthwatering Margherita Pizza</h3>
-                  <p class="card-text">
-                    Succulent beef patty topped with melted cheddar cheese,
-                    caramelized onions, crispy bacon, and tangy barbecue sauce
-                  </p>
-                  <button class="btn mt-auto">Order Now</button>
-                </div>
-              </div>
-            </div>
-            <div class="col-12 col-lg-3">
-              <div class="card shadow-sm border-0 rounded">
-                <!-- <img src="assets/sushi.jpg" class="card-img-top" alt="" /> -->
-                <img src="{% static 'assets/sushi.jpg' %}" class="card-img-top"  alt="Logo">
-                <div class="card-body">
-                  <h3 class="card-title">Sushi</h3>
-                  <p class="card-text">
-                    Delicate rice pillows adorned with fresh, buttery slices of sashimi—salmon, tuna, and yellowtail—nestled atop a bed of vinegared rice. 
-                  </p>
-                  <button class="btn mt-auto">Order Now</button>
-                </div>
-              </div>
-            </div>
-            <div class="col-12 col-lg-3">
-              <div class="card shadow-sm border-0 rounded">
-                <!-- <img src="assets/lavacake.jpg" class="card-img-top" alt="" /> -->
-                <img src="{% static 'assets/lavacake.jpg' %}" class="card-img-top"  alt="Logo">
-                <div class="card-body">
-                  <h3 class="card-title">Lava Chocolate Cake</h3>
-                  <p class="card-text">
-                    Indulge in a decadent symphony of textures and tastes. The warm embrace of cocoa, paired with a scoop of vanilla ice cream, creates a dessert nirvana
-                  </p>
-                  <button class="btn mt-auto">Order Now</button>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
+       <!-- detail -->
       </section>
 
       <section class="how-it-works" id="how">
@@ -164,12 +108,10 @@
                 >
                   <span><ion-icon class="icon" name="search"></ion-icon></span>
                   <h3 class="fw-bold text-dark how-it-works-title">
-                    Browse our extensive menu
+                    {{info.name}}
                   </h3>
-                  <p class="how-it-works-text">
-                    Discover a wide range of delectable dishes from various
-                    cuisines. From appetizers and main courses to desserts and
-                    beverages, we have something to satisfy every craving.
+                  <p class="text-dark pt-4">
+                    {{info.description}}
                   </p>
                 </div>
               </div>
@@ -179,12 +121,10 @@
                 >
                   <span><ion-icon class="icon" name="search"></ion-icon></span>
                   <h3 class="fw-bold text-dark how-it-works-title">
-                    Place your order
+                    {{info.name}}
                   </h3>
-                  <p class="how-it-works-text">
-                    Discover a wide range of delectable dishes from various
-                    cuisines. From appetizers and main courses to desserts and
-                    beverages, we have something to satisfy every craving.
+                  <p class="text-dark pt-4">
+                    {{info.description}}
                   </p>
                 </div>
               </div>
@@ -194,13 +134,10 @@
                 >
                   <span><ion-icon class="icon" name="search"></ion-icon></span>
                   <h3 class="fw-bold text-dark how-it-works-title">
-                    Track your delivery
+                    {{info.name}}
                   </h3>
-                  <p class="how-it-works-text">
-                    Sit back and relax as our dedicated delivery professionals
-                    swiftly bring your order to your location. Monitor the
-                    progress of your delivery in real-time and know exactly when
-                    to expect your food.
+                  <p class="text-dark pt-4">
+                    {{info.description}}
                   </p>
                 </div>
               </div>
@@ -210,12 +147,10 @@
                 >
                   <span><ion-icon class="icon" name="search"></ion-icon></span>
                   <h3 class="fw-bold text-dark how-it-works-title">
-                    Enjoy your meal
+                    {{info.name}}
                   </h3>
-                  <p class="how-it-works-text">
-                    Once your order arrives, indulge in a flavorful dining
-                    experience from the comfort of your own home. Our commitment
-                    to quality ensures that every bite is a delight.
+                  <p class="text-dark pt-4">
+                    {{info.description}}
                   </p>
                 </div>
               </div>
