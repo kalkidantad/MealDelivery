@@ -22,7 +22,7 @@
     <header class="bg-header">
       <nav class="navbar navbar-expand-lg">
         <div class="container">
-          <a class="navbar-brand text-white fw-bold" href="#" data-bs-toggle="tooltip" data-bs-title="MealDelivery" data-bs-placement="bottom">MealDelivery</a>
+          <a class="navbar-brand text-white fw-bold" href="#" data-bs-toggle="tooltip" data-bs-title="MealDelivery" data-bs-placement="bottom">{{info.name}}</a>
           <button
             class="navbar-toggler"
             type="button"
@@ -62,13 +62,10 @@
             <div class="d-flex align-items-center justify-content-between">
               <div class="col-12 col-lg-6">
                 <h1 class="text-white fw-bold pt-5">
-                    Enjoy the Flavorful Journey with MealDelivery
+                  {{info.name}}
                 </h1>
                 <p class="text-white pt-4">
-                    MealDelivery is your go-to platform for seamless food delivery. 
-                <br>
-                     Whether you’re craving a hearty meal, a quick snack, or a delightful dessert, we’ve got you covered. Explore a diverse menu and have your cravings delivered right to your doorstep. Bon appétit! 🍔🍕🍣
-                </br>
+                  {{info.description}}
                 </p>
                 <button class="btn mt-5">Get the App</button>
               </div>
@@ -102,10 +99,8 @@
                   <h3 class="fw-bold text-dark how-it-works-title">
                     Browse our extensive menu
                   </h3>
-                  <p class="how-it-works-text">
-                    Discover a wide range of delectable dishes from various
-                    cuisines. From appetizers and main courses to desserts and
-                    beverages, we have something to satisfy every craving.
+                  <p class="text-dark pt-4">
+                    {{info.description}}
                   </p>
                 </div>
               </div>
@@ -117,10 +112,8 @@
                   <h3 class="fw-bold text-dark how-it-works-title">
                     Place your order
                   </h3>
-                  <p class="how-it-works-text">
-                    Discover a wide range of delectable dishes from various
-                    cuisines. From appetizers and main courses to desserts and
-                    beverages, we have something to satisfy every craving.
+                  <p class="text-dark pt-4">
+                    {{info.description}}
                   </p>
                 </div>
               </div>
@@ -132,12 +125,7 @@
                   <h3 class="fw-bold text-dark how-it-works-title">
                     Track your delivery
                   </h3>
-                  <p class="how-it-works-text">
-                    Sit back and relax as our dedicated delivery professionals
-                    swiftly bring your order to your location. Monitor the
-                    progress of your delivery in real-time and know exactly when
-                    to expect your food.
-                  </p>
+                  <p class="text-dark pt-4">{{info.description}}</p>
                 </div>
               </div>
               <div class="col-12 col-lg-6">
@@ -148,10 +136,7 @@
                   <h3 class="fw-bold text-dark how-it-works-title">
                     Enjoy your meal
                   </h3>
-                  <p class="how-it-works-text">
-                    Once your order arrives, indulge in a flavorful dining
-                    experience from the comfort of your own home. Our commitment
-                    to quality ensures that every bite is a delight.
+                  <p class="text-dark pt-4">{{info.description}}
                   </p>
                 </div>
               </div>
@@ -179,11 +164,8 @@
                             alt=""
                           /> -->
                           <img src="{% static 'assets/f.png' %}" class="rounded-circle pb-4" alt="Logo">
-                          <p class="testimonial-text pb-2">
-                            MealDelivery has transformed the way I enjoy meals.
-                            The convenience of ordering my favorite dishes from
-                            local restaurants and having them delivered to my
-                            doorstep is simply fantastic.
+                          <p class="text-white pt-4">
+                            {{info.description}}
                           </p>
                           <h3 class="testimonials-name">Sarah M</h3>
                         </div>
@@ -207,11 +189,8 @@
                             alt=""
                           /> -->
                           <img src="{% static 'assets/m.jpg' %}" width="150px" class="rounded-circle pb-4" alt="Logo">
-                          <p class="testimonial-text pb-2">
-                            MealDelivery has transformed the way I enjoy meals.
-                            The convenience of ordering my favorite dishes from
-                            local restaurants and having them delivered to my
-                            doorstep is simply fantastic.
+                          <p class="text-white pt-4">
+                            {{info.description}}
                           </p>
                           <h3 class="testimonials-name">John j</h3>
                         </div>
